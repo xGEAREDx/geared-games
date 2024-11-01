@@ -6,6 +6,7 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: blueviolet;
     font-size: 45px;
+    color: white;
 }
 h2 {
     text-align: center;
@@ -19,6 +20,7 @@ h6 {
 p {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 h6 {
     text-decoration: none;
