@@ -19,6 +19,7 @@ h6 {
 p {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 h6 {
     text-decoration: none;
@@ -30,5 +31,8 @@ a {
     text-decoration: none;
 }
 .fancy {
-    color: brown;
+    color: white;
+}
+.link {
+    color: red;
 }
