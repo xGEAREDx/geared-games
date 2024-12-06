@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proxy Example with Moonlight Proxy</title>
+    <title>Go to Website via Moonlight Proxy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,27 +36,19 @@
             border-radius: 5px;
             border: 1px solid #ccc;
         }
-        pre {
-            background-color: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Fetch Data via Moonlight Proxy</h1>
+    <h1>Visit a Website via Moonlight Proxy</h1>
     <label for="url">Enter Website URL:</label>
-    <input type="text" id="url" placeholder="e.g., https://jsonplaceholder.typicode.com/posts" />
-    <button class="btn" onclick="fetchData()">Fetch Data</button>
-    <pre id="output">Response will appear here...</pre>
+    <input type="text" id="url" placeholder="e.g., https://example.com" />
+    <button class="btn" onclick="goToWebsite()">Go</button>
 </div>
 
 <script>
-    function fetchData() {
+    function goToWebsite() {
         const userUrl = document.getElementById('url').value.trim();
         
         if (!userUrl) {
@@ -64,24 +56,16 @@
             return;
         }
 
-        const proxyUrl = 'https://moonlightapi.xyz/fetch?url='; // Using the Moonlight Proxy URL
-        const targetUrl = encodeURIComponent(userUrl); // Encoding the user input URL
+        // Ensure the URL starts with http:// or https://
+        if (!userUrl.startsWith('http://') && !userUrl.startsWith('https://')) {
+            userUrl = 'https://' + userUrl;
+        }
+
+        // Use the Moonlight Proxy to navigate to the target URL
+        const proxyUrl = 'https://moonlightapi.xyz/fetch?url=' + encodeURIComponent(userUrl);
         
-        fetch(proxyUrl + targetUrl)
-            .then(response => response.json())
-            .then(data => {
-                // Display the fetched data
-                const output = document.getElementById('output');
-                if (data && data.content) {
-                    output.textContent = data.content; // Display the content fetched via the proxy
-                } else {
-                    output.textContent = 'No content available or error fetching the data.';
-                }
-            })
-            .catch(error => {
-                const output = document.getElementById('output');
-                output.textContent = 'Error: ' + error.message;
-            });
+        // Redirect to the proxy URL
+        window.location.href = proxyUrl;
     }
 </script>
 
