@@ -1,7 +1,6 @@
 hi its me pyromania and this is a small website i made (and will continue to update).
 i hope to find more ways to implement more unique games 
 if there is something im working on ill put it here and in the github issues tab
-oh btw my sponsor botton at the top of the github repo brings you to a patreon for my favorite youtuber (bringus studios)
 
 WHAT IS HE WORKING ON THATS TAKING SO LONG:
 
