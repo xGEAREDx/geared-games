@@ -1,38 +1,62 @@
+/* General Styling */
 body {
-    background-color: black;
-}
-h1 {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    font-family: 'Press Start 2P', sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: blueviolet;
+}
+
+/* Header */
+header h1 {
     font-size: 45px;
+    color: #ff6f61; /* Retro orange-red */
+    margin: 20px 0;
+    text-shadow: 2px 2px 0 #000000, -2px -2px 0 #ffdf6f;
 }
-h2 {
-    text-align: center;
-    font-family: monospace;
-}
-h6 {
-    text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-}
-p {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-}
-h6 {
-    text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-    color: red;
-}
-a {
-    text-decoration: none;
-}
-.fancy {
-    color: white;
-}
+
+/* Links Section */
 .link {
-    color: red;
+    font-size: 18px;
+    color: #ffd700; /* Retro gold */
+    margin: 10px 0;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.games-links ul,
+.videos-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.games-links li,
+.videos-links li {
+    margin: 10px 0;
+}
+
+.games-links a,
+.videos-links a {
+    display: inline-block;
+    font-size: 20px;
+    color: #66d9ef; /* Retro blue */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #66d9ef;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.games-links a:hover,
+.videos-links a:hover {
+    background-color: #66d9ef;
+    color: #1a1a1a;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+/* Video Links Section */
+.videos-links h2 {
+    font-size: 25px;
+    color: #a9dc76; /* Retro green */
+    text-shadow: 2px 2px 0 #000000;
 }

@@ -1,34 +1,65 @@
+/* General Styling */
 body {
-    background-color: black;
-}
-h1 {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    font-family: 'Press Start 2P', sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: blueviolet;
-    font-size: 45px;
-    color: white;
 }
+
+/* Header Styling */
+header h1 {
+    font-size: 35px;
+    color: #ff6f61; /* Retro orange-red */
+    margin: 20px 0;
+    text-shadow: 2px 2px 0 #000000, -2px -2px 0 #ffdf6f;
+}
+
+/* Section Titles */
 h2 {
-    text-align: center;
-    font-family: monospace;
-    color: whitesmoke;
+    font-size: 25px;
+    color: #ffd700; /* Retro gold */
+    margin-bottom: 10px;
 }
-h6 {
+
+/* Compatible Games List */
+.compatible-games ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.compatible-games li {
+    font-size: 20px;
+    color: #66d9ef; /* Retro blue */
+    text-shadow: 1px 1px 0 #000000;
+    margin: 5px 0;
+}
+
+/* Request Links */
+.request-links a h6 {
+    color: #ff6f61; /* Retro orange-red */
+    font-size: 20px;
+    margin: 10px 0;
+    text-shadow: 1px 1px 0 #000000;
     text-decoration: none;
-    font-size: 30px;
-    text-align: center;
 }
-p {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: blue;
+
+.request-links a h6:hover {
+    color: #ffd700; /* Highlight color */
 }
-h6 {
-    text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-    color: red;
-}
-a {
-    text-decoration: none;
-}
+/* Credits Section */
+.credits {
+    font-size: 20px;
+    margin: 20px auto;
+    line-height: 2;
+     }
+    .credits p {
+        color: #66d9ef;
+         /* Retro blue */ 
+         text-shadow: 1px 1px 0 #000000;
+        } 
+        .credits strong {
+             color: #ffd700;
+              /* Retro gold */ }
