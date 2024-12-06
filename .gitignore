@@ -1,4 +1,5 @@
-**/*.nds 
-**/*.gba  
-**/*.sfc  
-**/*.swf 
+git rm --cached **/*.nds
+git rm --cached **/*.gba
+git rm --cached **/*.sfc
+git rm --cached **/*.swf
+git commit -m "Remove ROM and SWF files from tracking"
