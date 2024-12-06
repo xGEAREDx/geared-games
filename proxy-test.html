@@ -62,9 +62,9 @@
         }
 
         // Use the Moonlight Proxy to navigate to the target URL
-        const proxyUrl = 'https://moonlightapi.xyz/fetch?url=' + encodeURIComponent(userUrl);
+        const proxyUrl = 'https://moonlightapi.xyz/?url=' + encodeURIComponent(userUrl);
         
-        // Redirect to the proxy URL
+        // Redirect the user to the proxy URL
         window.location.href = proxyUrl;
     }
 </script>
