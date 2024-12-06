@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Example with Moonlight Proxy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Fetch Data via Moonlight Proxy</h1>
+    <label for="url">Enter Website URL:</label>
+    <input type="text" id="url" placeholder="e.g., https://jsonplaceholder.typicode.com/posts" />
+    <button class="btn" onclick="fetchData()">Fetch Data</button>
+    <pre id="output">Response will appear here...</pre>
+</div>
+
+<script>
+    function fetchData() {
+        const userUrl = document.getElementById('url').value.trim();
+        
+        if (!userUrl) {
+            alert("Please enter a URL.");
+            return;
+        }
+
+        const proxyUrl = 'https://moonlightapi.xyz/fetch?url='; // Using the Moonlight Proxy URL
+        const targetUrl = encodeURIComponent(userUrl); // Encoding the user input URL
+        
+        fetch(proxyUrl + targetUrl)
+            .then(response => response.json())
+            .then(data => {
+                // Display the fetched data
+                const output = document.getElementById('output');
+                if (data && data.content) {
+                    output.textContent = data.content; // Display the content fetched via the proxy
+                } else {
+                    output.textContent = 'No content available or error fetching the data.';
+                }
+            })
+            .catch(error => {
+                const output = document.getElementById('output');
+                output.textContent = 'Error: ' + error.message;
+            });
+    }
+</script>
+
+</body>
+</html>
