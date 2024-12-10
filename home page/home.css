@@ -35,23 +35,26 @@ h2 {
     margin: 10px 0;
 }
 
-/* Link Styling */
+/* Link Styling (Updated to be compact) */
 a {
-    color: #ff4081;
+    color: #3498db; /* Blue for links */
     text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 24px;
-    transition: all 0.3s ease-in-out;
-    display: block;
-    margin: 10px;
-    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px 0; /* Reduced vertical margin */
+    padding: 8px 16px; /* Reduced padding to make the button more compact */
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block; /* Align the link with text */
+    text-align: center; /* Center text inside the link */
 }
 
-/* Hover effects */
+/* Hover effects for links */
 a:hover {
-    color: #40c4ff;
-    transform: scale(1.1);
-    text-shadow: 0 0 10px #fff;
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
 }
 
 /* Small Header Styling */
