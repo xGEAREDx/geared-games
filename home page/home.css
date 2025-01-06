@@ -42,6 +42,7 @@ a:hover {
     border-radius: 5px;
     color: #03dac6;
     transition: background-color 0.3s, color 0.3s;
+    font-size: large;
 }
 
 .links a:hover {
