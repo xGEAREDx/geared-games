@@ -1,81 +1,50 @@
-/* Global Styling */
 body {
-    background-color: #0f0f0f;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.content {
     text-align: center;
-}
-
-/* Header Styling */
-header {
-    background: linear-gradient(45deg, #ff4081, #40c4ff);
     padding: 20px;
-    border-bottom: 3px solid #fff;
 }
 
-h1 {
-    font-family: 'Press Start 2P', cursive; /* Retro Pixel Font */
-    color: #fff;
-    font-size: 60px;
-    margin: 0;
+h1, h2 {
+    color: #bb86fc;
 }
 
-h2 {
-    font-family: 'Press Start 2P', cursive;
-    color: red;
-    font-size: 30px;
-    margin: 10px 0;
-}
-
-/* Section for Log */
-.log p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-/* Link Styling (Updated to be compact) */
-a {
-    color: #3498db; /* Blue for links */
-    text-decoration: none;
-    font-size: 18px;
-    margin: 10px 0; /* Reduced vertical margin */
-    padding: 8px 16px; /* Reduced padding to make the button more compact */
-    border: 2px solid #3498db; /* Blue border */
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    display: inline-block; /* Align the link with text */
-    text-align: center; /* Center text inside the link */
-}
-
-/* Hover effects for links */
-a:hover {
-    background-color: #3498db;
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
-}
-
-/* Small Header Styling */
-h6 {
-    font-family: 'Press Start 2P', cursive;
-    color: red;
-    font-size: 30px;
-    margin: 10px 0;
-}
-
-/* Adding retro border styles */
-nav {
-    margin-top: 20px;
-    border-top: 3px dashed #fff;
-    padding-top: 20px;
-}
-
-/* Adding some padding and margin for cleaner look */
 p {
-    margin-bottom: 20px;
+    color: #ffffff;
 }
 
-/* Custom Google Font for retro theme */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+a {
+    color: #03dac6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    color: #03dac6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
