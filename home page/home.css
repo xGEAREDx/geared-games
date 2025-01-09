@@ -49,3 +49,198 @@ a:hover {
     background-color: #333333;
     color: #ffffff;
 }
+/* From Uiverse.io by mrhyddenn */ 
+.container {
+    width: 230px;
+    height: 194px;
+  }
+  
+  .terminal_toolbar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: linear-gradient(#504b45 0%, #3c3b37 100%);
+  }
+  
+  .butt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+  }
+  
+  .btn-color {
+    background: #ee411a;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .butt--exit {
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+  }
+  
+  .user {
+    color: #d5d0ce;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  
+  .terminal_body {
+    background: rgba(56, 4, 40, 0.9);
+    height: calc(100% - 30px);
+    padding-top: 2px;
+    margin-top: -1px;
+    font-size: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .terminal_promt {
+    display: flex;
+  }
+  
+  .terminal_promt span {
+    margin-left: 4px;
+  }
+  
+  .terminal_user {
+    color: #7eda28;
+  }
+  
+  .terminal_location {
+    color: #4878c0;
+  }
+  
+  .terminal_bling {
+    color: #dddddd;
+  }
+  
+  .terminal_cursor {
+    display: block;
+    height: 14px;
+    width: 5px;
+    margin-left: 10px;
+    animation: curbl 1200ms linear infinite;
+  }
+  
+  @keyframes curbl {
+    
+    0% {
+      background: #ffffff;
+    }
+  
+    49% {
+      background: #ffffff;
+    }
+  
+    60% {
+      background: transparent;
+    }
+  
+    99% {
+      background: transparent;
+    }
+  
+    100% {
+      background: #ffffff;
+    }
+  } 
+  /* From Uiverse.io by vinodjangid07 */ 
+.Documents-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 45px;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 83);
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .folderContainer {
+    align-items: center;
+    width: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .fileBack {
+    align-items: center;
+    z-index: 1;
+    width: 80%;
+    height: auto;
+  }
+  .filePage {
+    align-items: center;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+  }
+  .fileFront {
+    align-items: center;
+    width: 85%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.95;
+    transform-origin: bottom;
+    transition: all 0.3s ease-out;
+  }
+  .text {
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .Documents-btn:hover .filePage {
+    align-items: center;
+    transform: translateY(-5px);
+  }
+  .Documents-btn:hover {
+    align-items: center;
+    background-color: rgb(58, 58, 94);
+  }
+  .Documents-btn:active {
+    align-items: center;
+    transform: scale(0.95);
+  }
+  .Documents-btn:hover .fileFront {
+    align-items: center;
+    transform: rotateX(30deg);
+  }
+  
